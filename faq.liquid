@@ -1,0 +1,19 @@
+---
+title: FAQ
+tags: pages
+pagination:
+  data: faq.questions
+  size: 3
+---
+<h3>FAQs</h3>
+<p>Pagination example</p>
+<ul>
+	{% for faq in pagination.items %}
+		<li>
+			<h4>{{ faq.question }}</h4>
+			<p>{{ faq.answer }}</p>
+		</li>
+	{% endfor %}
+</ul>
+
+{% include 'pagination' %}

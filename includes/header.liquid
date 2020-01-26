@@ -1,0 +1,18 @@
+<h1>
+	Site Title
+</h1>
+
+<ul>
+	<li>
+		<a href="/">
+			Home
+		</a>
+	</li>
+	{% for page in collections.pages %}
+		<li>
+			<a href="{{ page.url }}">
+				{{ page.data.title }}
+			</a>
+		</li>
+	{% endfor %}
+</ul>
