@@ -3,19 +3,19 @@
 <ul>
 	{% if pagination.href.previous %}
 		<li>
-			<a href="{{ pagination.href.previous }}">&larr;</a>
+			<a href="{{ pagination.href.previous | url }}">&larr;</a>
 		</li>
 	{% endif %}
 	{% for page in pagination.hrefs %}
 		<li>
-			<a href="{{ page }}">
+			<a href="{{ page | url }}">
 				Page {{ forloop.index }}
 			</a>
 		</li>
 	{% endfor %}
 	{% if pagination.href.next %}
 		<li>
-			<a href="{{ pagination.href.next }}">&rarr;</a>
+			<a href="{{ pagination.href.next | url }}">&rarr;</a>
 		</li>
 	{% endif %}
 </ul>

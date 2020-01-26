@@ -4,13 +4,13 @@
 
 <ul>
 	<li>
-		<a href="/">
+		<a href="{{ '/' | url }}">
 			Home
 		</a>
 	</li>
 	{% for page in collections.pages %}
 		<li>
-			<a href="{{ page.url }}">
+			<a href="{{ page.url | url }}">
 				{{ page.data.title }}
 			</a>
 		</li>
