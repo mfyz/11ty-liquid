@@ -1,5 +1,5 @@
 {
-  "name": "11ty-example",
+  "name": "11ty-liquid",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
 	"@11ty/eleventy": "^0.10.0",
 	"liquidjs": "^9.6.2"
   }
