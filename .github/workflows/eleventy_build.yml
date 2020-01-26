@@ -8,6 +8,8 @@ jobs:
       - uses: actions/checkout@master
       - name: Build
         uses: mfyz/actions-eleventy@master
+        with:
+          args: --pathprefix=11ty-liquid
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v1.1.0
         env:
